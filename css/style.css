@@ -1,6 +1,7 @@
 body {
     margin: auto;
     font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
 }
 
 .container {
@@ -9,9 +10,9 @@ body {
     background-repeat: no-repeat;
     background-size: 150%;
     width: 100%;
-    height: 1200px;
-    padding-top: 200px;
-    margin-top: 150px;
+    height: 800px;
+    padding-top: 150px;
+    overflow: hidden;
 }
 
 .card {
@@ -67,4 +68,51 @@ body {
 
 .prize {
     color:hsl(224, 23%, 55%);
+}
+
+.change {
+    color:hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+
+.change:hover{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    color:hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    padding: 10px 70px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 900px){
+    .container {
+        background-color: hsl(225, 100%, 94%);
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        /* padding-top: 180px; */
+    }   
+}
+
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-order {
+    color:hsl(224, 23%, 55%);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.cancel-order:hover{
+    color:hsl(223, 47%, 23%);
 }
